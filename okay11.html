@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result Table</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        caption {
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+        }
+        td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #e6ffe6;
+        }
+        tfoot td {
+            background-color: #ddd;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Student Marksheet</caption>
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Math</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>92</td>
+            </tr>
+            <tr>
+                <td>Computer</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>History</td>
+                <td>85</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Marks: 433</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
